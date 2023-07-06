@@ -1,0 +1,11 @@
+#include<iostream>
+using namespace std;
+int main(){
+ 
+   long long n1, n2;
+   cin>>n1>>n2;
+   int x = n1%10, y = n2%10;
+   cout<<x+y<<endl;
+ 
+  return 0; 
+}
