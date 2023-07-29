@@ -1,0 +1,41 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+ 
+    int n1 , n2 , n3 ;
+    char op , equ = '=' ;
+    cin >> n1 >> op >> n2 >> equ >> n3 ;
+ 
+    switch(op){
+ 
+        case ('+'):
+        if ( (n1+n2) == n3 ){
+            cout << "Yes\n" ;
+        }
+        else{
+            cout << n1+n2 << "\n" ;
+        }
+        break;
+ 
+        case ('-'):
+        if ( (n1-n2) == n3 ){
+            cout << "Yes\n" ;
+        }
+        else{
+            cout << n1-n2 << "\n" ;
+        }
+        break;
+ 
+        default:
+        if ( (n1*n2) == n3 ){
+            cout << "Yes\n" ;
+        }
+        else{
+            cout << n1*n2 << "\n" ;
+        }
+        break;
+ 
+    }
+ 
+    return 0 ;
+}
