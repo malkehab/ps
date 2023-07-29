@@ -1,0 +1,43 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+ 
+    int n1 , n2 ;
+    char op ;
+    cin >> n1 >> op >> n2 ;
+    
+    
+    switch(op){
+ 
+        case('>'):
+        if ( n1 > n2){
+            cout << "Right" << endl ;
+        }
+        else{
+            cout << "Wrong" << endl ;
+        }
+        break ;
+ 
+        case('<'):
+        if ( n1 < n2){
+            cout << "Right" << endl ;
+        }
+        else{
+            cout << "Wrong" << endl ;
+        }
+        break ;
+ 
+        default:
+        if ( n1 == n2){
+            cout << "Right" << endl ;
+        }
+        else{
+            cout << "Wrong" << endl ;
+        }
+        break ;
+    }
+    
+ 
+    return 0 ;
+ 
+}
