@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std ;
+int main(){
+ 
+    int cases , num ;
+    cin >> cases ;
+ 
+    for(int i=0; i<cases; i++){
+        cin >> num ;
+        long long f = 1 ;
+        for(int j=num ; j>0; j-- ){
+            f = f * j ;
+        }
+        cout << f << "\n";
+    }
+    
+    return 0 ;
+    
+}
